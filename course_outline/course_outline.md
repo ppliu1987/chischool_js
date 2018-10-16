@@ -36,6 +36,9 @@
 		未来-趋势
 			AI热,各行业与互联网的深度融合,放弃百万年薪的阿里人故事
 	3.学习编程的目的
+		编程就是逻辑训练
+		编程就是动手训练
+		编程就是试错训练
 		将编程思想用于学习和工作的实践中
 	4.课程介绍
 		课程顺序
@@ -50,7 +53,9 @@
 		学校主页，家庭照片墙  动态页面
 	5.介绍浏览器，浏览器在互联网中的作用  网页及浏览器历史（http://www.iefans.net/wangye-liulanqi-fazhan-xiangshi/）
 	6.网页的构成
-		文字 图片（动态图片）  视频  音频   按钮
+		页面文件(html文件--.html文件)+页面便签(HTML标签)
+		页面元素:
+			文字 图片（动态图片）  视频  音频   按钮
 	7.网页的三大组成元素
 		HTML(hyperText markup language)标签  CSS(cascading style sheet)标签属性  JavaScript(js)改变标签属性
 	8.网页三大组件的作用及演示（首课演示文档firstclass_show.html）
@@ -78,12 +83,14 @@
 		<!DOCTYPE> 声明必须是 HTML 文档的第一行，位于 <html> 标签之前。
 		<!DOCTYPE> 声明不是 HTML 标签；它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令。
 		<html>--跟标签 有且只能有一对  所有的只能写它里面
+			双标签的正确开始和结束<html> </html>
 		<head>--头标签 有且只能有一对  他里面的内容是展示给电脑看的
 		<body>--体标签有且 只能有一对  他里面的内容是展示给人看的
 		<meta>  不写meta展示乱码
 		<title>--只显示第一个
 		<!-- -->注释的作用:1.添加代码说明,提高代码的易读性2.使代码无效
 		<br/> blank row
+			单标签的结束<br/>
 		<hr/>horizontal rule
 		<h1>--<h6>独占一行,字体加粗,字体变大
 		<p>this is a paragraph!</p>独占一行
