@@ -502,18 +502,65 @@
 			var myArray = new Array(5);
 			var arrLength = myArray.length
 	for
-	对象
+		for语句格式：
+			for (语句 1; 语句 2; 语句 3)
+			  {
+			  被执行的代码块
+			  }
+			语句 1 在循环（代码块）开始前执行
+			语句 2 定义运行循环（代码块）的条件
+			语句 3 在循环（代码块）已被执行之后执行
+		for循环实例：
+			for (var i=0; i<5; i++)
+			  {
+			  x=x + "The number is " + i + "<br>";
+			  }
+	
 	课后总结：
 第十七课：
 	前情提要：
-	函数
-	null
+	对象
+		对象有两个属性，不一定两个都具备，可以只有一个属性
+			一：属性
+			二：方法
+		一切皆对象
+		var object = {
+			name：Jack，
+			age:10,
+			eat()
+		}；
+	
 	while循环
+			while (条件)
+	  {
+	  需要执行的代码
+	  }
+	while (i<5)
+	  {
+	  x=x + "The number is " + i + "<br>";
+	  i++;
+	  }
+	  
+	 do
+	  {
+	  需要执行的代码
+	  }
+	while (条件);
+	do
+	  {
+	  x=x + "The number is " + i + "<br>";
+	  i++;
+	  }
+	while (i<5);
 	事件绑定
+		document.getElementById()
 	课后总结：
 第十八课：
 	前情提要：
 	函数
+		函数的用途
+			改变标签的属性值
+	null
 	return
 	switch
 	异常调试  --undefined
