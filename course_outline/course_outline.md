@@ -490,10 +490,10 @@
 	函数
 		函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。
 		函数就是包裹在花括号中的代码块，前面使用了关键词 function：
-			function 函数名(参数1,参数2)
-			{
+			function 函数名(参数1,参数2...)
 				执行代码
 			}
+			参数:
 	程序执行顺序
 		从上往下逐行执行
 	
@@ -576,69 +576,117 @@
 	  }
 	while (i<5);
 	事件绑定
-		document.getElementById()
+		
 	课后总结：
 第十八课：
 	前情提要：
+	switch(n)语句[实例:未及格,及格,优秀]
+		{
+		    case 1:
+		        执行代码块 1
+		        break;
+		    case 2:
+		        执行代码块 2
+		        break;
+		    default:
+		        与 case 1 和 case 2 不同时执行的代码
+		}
+	var element = document.getElementById();
 	函数
 		函数的用途
-			改变标签的属性值
+			选取DOM节点,改变DOM节点属性值
+			增加DOM节点
+			删除DOM节点
 	null
 	return
-	switch
 	异常调试  --undefined
 	课后总结：
 第十九课：
 	前情提要：
-	事件
+	continue
 	DOM
+		DOM介绍
+			父子节点概念  兄弟节点  没有爷孙节点  直接子节点和间接子节点
+				节点树中的节点彼此拥有层级关系。
+					我们常用父（parent）、子（child）和兄弟（sibling）等术语来描述这些关系。父节点拥有子节点。同级的子节点被称为同胞（兄弟或姐妹）。
+					在节点树中，顶端节点被称为根（root）。
+					每个节点都有父节点、除了根（它没有父节点）。
+					一个节点可拥有任意数量的子节点。
+					兄弟节点是拥有相同父节点的节点。
+		DOM节点
+			选取DOM节点,改变DOM节点属性值
+			增加DOM节点
+			删除DOM节点
+			
+			
+			获取节点
+				获取单个节点
+					var element = document.getElementById();
+				查询多个节点(集合)	
+					var elementCollection = document.getElementsByTagName();
+			nodeName
+			nodeValue
+			
+			innerHTML
+		DOM事件
+			
 	课后总结：
 第二十课：
 	前情提要：
 	事件
 	DOM
+		事件分类:鼠标事件,键盘事件
+	事件绑定
+		document.getElementById
+		document.getElementsByTagName()
+		
+		事件监听
 	课后总结：
 第二十一课：
 	前情提要：
 	事件
-	DOM
+	BOM
 	课后总结：
 第二十二课：
 	前情提要：
 	事件
-	DOM
+	BOM
 	课后总结：
 第二十三课：
 	前情提要：
 	事件
-	BOM
+	javascript改变参数
 	课后总结：
 第二十四课：
 	前情提要：
 	事件
-	BOM
+	实例
 	课后总结：
 第二十五课：
 	前情提要：
 	事件
-	BOM
+	javascript改变参数
 	课后总结：
 第二十六课：
 	前情提要：
 	事件
-	BOM
+	实例
 	课后总结：
 第二十七课：
 	前情提要：
+	javascript改变参数
 	课后总结：
 第二十八课：
 	前情提要：
+	实例
 	课后总结：
 第二十九课：
 	前情提要：
+	javascript改变参数
 	课后总结：
 第三十课：
 	前情提要：
+	实例
 	课后总结：
 	
 	

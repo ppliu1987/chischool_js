@@ -12,10 +12,7 @@
 			body{
 				background-image:url(../../img/background.jpg);
 			}
-			li{
-				list-style:none;
-				display: inline;
-			}
+			
 		</style>
 		
 	</head>
@@ -35,15 +32,26 @@
         			宽  高  背景色
         			元素.style.样式=值
         -->
-		<ul>
-			<li>苹果</li>
-			<li>橘子</li>
-			<li>香蕉</li>
-		</ul>
+		<div id="div">
+			<p id="p1">这是第一段</p>
+			<p id="p2">这是第二段</p>
+		</div>
 
 		<script>
-			if(1=="1"){alert("I Love ChiSchode");}
-			if(1==="1"){alert("I Love ChiSchode,too");}
+			var p3 = document.createElement("p");
+			var txt = document.createTextNode("这个一个新的段落");
+			var dv = document.getElementById("div");
+			
+			p3.style.backgroundColor="#FF0000";
+			
+			p3.appendChild(txt);
+			dv.appendChild(p3);
+			
+			var colle = document.getElementsByTagName("p");
+			
+			window.onload= function(){
+				alert(colle.length);
+			}
 		</script>
 	</body>
 </html>
