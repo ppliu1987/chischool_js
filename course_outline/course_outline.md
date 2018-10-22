@@ -472,6 +472,7 @@
 			变量名称对大小写敏感（y 和 Y 是不同的变量）
 			见名知意
 			驼峰规则
+			不能使用关键字保留字
 		数据类型:
 			字符串   数字   数组  布尔   对象   null  undefined
 		运算符:
@@ -646,10 +647,21 @@
 	前情提要：
 	事件
 	BOM
-		windon
-		可用的高度和宽度
-			screen.availWidth - 可用的屏幕宽度
-			screen.availHeight - 可用的屏幕高度
+		window
+			window.onload
+			window.screen可用的高度和宽度
+				screen.availWidth - 可用的屏幕宽度
+				screen.availHeight - 可用的屏幕高度
+			window.location
+				location.hostname 返回 web 主机的域名
+				location.pathname 返回当前页面的路径和文件名
+				location.port 返回 web 主机的端口 （80 或 443）
+				location.protocol 返回所使用的 web 协议（http:// 或 https://）
+			window.history
+			window Timing
+				setTimeOut()  执行一次
+				setInterval()无限循环
+		
 	课后总结：
 第二十二课：
 	前情提要：
