@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>转起来!</title>
+		
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			.container{
+				margin-left:559px;
+				margin-top: 60px;
+				width:800px;
+				height:800px;
+				text-align:center;
+			}
+			img{
+				width:800px;
+				height:600px;
+			}
+			#nam{
+				font-size: 100px;
+				border:0px;
+				padding:0;
+				margin:0;
+				width:800px;
+				height: 200px;
+				text-align: center;
+			}
+			#btn{
+				width: 120px;
+				height:80px;
+				color:red;
+				background-color: #0000FF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="main">
+				<div class="img">
+					<img id="portrait" src="" />
+				</div>
+				<div class="txt">
+					<input type="text" id="nam"></input>
+				</div>
+			</div>
+			<div class="main">
+				<div class="btn">
+					<input type="button" id="btn" value="点名" />
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var interval = '';
+			function callTheRoll(){
+				var srce = "../../img/";
+				var uris = ["58f6effe4c9ea.jpg","58f6effe4ca97.jpg","58f6effe4cb42.jpg"];
+				var names = ["张三","李四","王五"];
+				var index = parseInt(Math.random(10)*10)%3;
+				var im = document.getElementById("portrait");
+				var nam = document.getElementById("nam");
+				im.src = srce + uris[index];
+				nam.value = names[index];
+			}
+			window.onload = function(){
+				interval = setInterval("callTheRoll()",10);
+			}
+			var stp = document.getElementById("btn");
+			stp.onclick = function(){
+				alert("恭喜恭喜");
+				clearInterval(interval);
+			}
+		</script>
+	</body>
+</html>

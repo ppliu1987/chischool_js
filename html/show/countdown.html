@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>春节倒计时</title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin:0;
+			}
+			html{
+				background-color:#FF6F00;
+			}
+			h1{
+				font-family:"楷体";
+				font-size:100px;
+				text-align:center;
+				color:#77F111;
+				padding:100px;
+			}
+			div{
+				text-align:center;
+				font-family: "微软雅黑";
+				font-size:100px;
+				color:#4499ff
+			}
+			.num{
+				color:greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>春节倒计时开始啦!</h1>
+		<div class="content">
+			<span class="long">距离春节还剩</span>
+			<span id="num1" class="num"></span>
+			<span class="dat">天</span>
+			<span id="num2" class="num"></span>
+			<span class="hour">时</span>
+			<span id="num3" class="num"></span>
+			<span class="min">分</span>
+			<span id="num4" class="num"></span>
+			<span class="sec">秒</span>
+		</div>
+		<script type="text/javascript">
+			function countDown(){
+				var time = "2019-02-04 00:00:00"; 
+				var fu = Date.parse(new Date(time.replace(/-/g, "/")));//指定时间的毫秒数
+				var now = new Date();
+				var longs = fu-now.getTime();
+				var dat = longs/86400000;
+				
+				var da = parseInt(dat);
+				var minus = longs-da*24*60*60*1000;
+				
+				var hour = parseInt(minus/3600000);
+				var min = parseInt((minus-hour*3600000)/60000);
+				var sec = parseInt((minus-hour*3600000-min*60000)/1000);
+				
+				if(min<=9){
+					min = "0"+min;
+				}
+				if(sec<=9){
+					sec = "0"+sec;
+				}
+				
+				document.getElementById("num1").innerHTML=da;
+				document.getElementById("num2").innerHTML=hour;
+				document.getElementById("num3").innerHTML=min;
+				document.getElementById("num4").innerHTML=sec;
+			}
+			window.onload = setInterval("countDown()",1000);
+		</script>
+	</body>
+</html>

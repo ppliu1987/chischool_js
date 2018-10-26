@@ -41,7 +41,8 @@
 		编程就是试错训练
 		编程是对问题的解决方法和解决思路的实现
 		将编程思想用于学习和工作的实践中
-	4.课程介绍
+	4.学校编程的好处:
+	5.课程介绍
 		课程顺序
 			页面
 			后端-Java or  Python
@@ -49,19 +50,19 @@
 		为什么先从页面开始学
 			先易后难，容易入门
 			所见即所得，培养兴趣
-	4.课程目标
+	6.课程目标
 		清华 北大首页
 		学校主页，家庭照片墙  动态页面
-	5.介绍浏览器，浏览器在互联网中的作用  网页及浏览器历史（http://www.iefans.net/wangye-liulanqi-fazhan-xiangshi/）
-	6.网页的构成
+	7.介绍浏览器，浏览器在互联网中的作用  网页及浏览器历史（http://www.iefans.net/wangye-liulanqi-fazhan-xiangshi/）
+	8.网页的构成
 		页面文件(html文件--.html文件)+页面便签(HTML标签)
 		页面元素:
 			文字 图片（动态图片）  视频  音频   按钮
-	7.网页的三大组成元素
+	9.网页的三大组成元素
 		HTML(hyperText markup language)标签  CSS(cascading style sheet)标签属性  JavaScript(js)改变标签属性
-	8.网页三大组件的作用及演示（首课演示文档firstclass_show.html）
+	10.网页三大组件的作用及演示（首课演示文档firstclass_show.html）
 		html + css  可以做出你看到的任何静态网页
-	9.什么是静态网页?什么是动态网页?
+	11.什么是静态网页?什么是动态网页?
 		没有javascript参与的网页就是静态网页
 		通过dynamic_show.html
 	课后总结
@@ -649,6 +650,8 @@
 	BOM
 		window
 			window.onload
+			window.innerWidth:浏览器的可用宽带
+			window.innerHeight:浏览器的可用高度
 			window.screen可用的高度和宽度
 				screen.availWidth - 可用的屏幕宽度
 				screen.availHeight - 可用的屏幕高度
