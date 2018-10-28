@@ -33,6 +33,7 @@
 			电脑原理
 		现实
 			编程进入校园  世界范围内学编程热  提高择校范围
+			网络七层协议
 		未来-趋势
 			AI热,各行业与互联网的深度融合,放弃百万年薪的阿里人故事
 	3.学习编程的目的
@@ -243,6 +244,7 @@
 	
 	
 	border	在一个声明中设置所有的边框属性。	1
+	border-width	设置四条边框的宽度。	1
 	border-bottom	在一个声明中设置所有的下边框属性。	1
 	border-bottom-color	设置下边框的颜色。	2
 	border-bottom-style	设置下边框的样式。	2
@@ -261,7 +263,7 @@
 	border-top-color	设置上边框的颜色。	2
 	border-top-style	设置上边框的样式。	2
 	border-top-width	设置上边框的宽度。	1
-	border-width	设置四条边框的宽度。	1
+	
 	
 	border-radius	简写属性，设置所有四个 border-*-radius 属性。	3
 	
@@ -346,9 +348,26 @@
 	<img>	定义图像。
 	
 	position定位
-	
+		static:无特殊定位，对象遵循正常文档流。top bottom left right等属性不会被应用
+		raletive：对象遵循正常文档流，但将遵循top bottom left right等属性进行位置偏移
+		absolute：对象脱离正常文档流，使用top bottom left right等属性进行绝对定位，而其层叠通过z-index属性进行定义
+		fixed：对象脱离正常文档流，使用top bottom left right等属性相对窗口进行定位，当出现滚动条时，定位不会跟随滚动条而滚动
+		sticky：下回分解
+		文档流：
+		z-index:
+		
+		总结如下:
+			static 是默认布局，设置top\left。。属性不会有作用。
+			relative是相对布局，设置的top\left。。会相对文件中的控件。
+			absolute是绝对定位，设置的top\left。。会相对整个页面而定。
+			fixed是相对浏览器窗口定位，设置的top/left属性，是相对于浏览器窗口的位置。
+			
+			除此之外，经过我代码测试:
+			1.如果top\left。。其中某属性缺省，absolute，fixed布局的位置，会相对于父控件的位置进行改变。
+			2.relative相对定位，如果有父控件，相对的是最近的一个父控件，而非同层最近的一个父控件。其次是兄弟控件。
+			3.static对其他的遮盖层没有影响。
 	图片旋转
-	
+		transform:rotate(15deg)		//degree度
 	课后总结：
 第十课：
 	前情提要：
@@ -596,13 +615,10 @@
 	var element = document.getElementById();
 	函数
 		函数的用途
-<<<<<<< HEAD
 			改变标签的属性值，增加页面交互功能
-=======
 			选取DOM节点,改变DOM节点属性值
 			增加DOM节点
 			删除DOM节点
->>>>>>> e451e85f1324a358e9efbcddd46b62f300683809
 	null
 	return
 	异常调试  --undefined
@@ -633,7 +649,7 @@
 			nodeName
 			nodeValue
 			
-			innerHTML
+			innerHTML（input是 .value）
 		DOM事件
 			
 	课后总结：
@@ -668,6 +684,8 @@
 			window Timing
 				setTimeOut()  执行一次
 				setInterval()无限循环
+				clearTimeOut
+				clearInterval
 		
 	课后总结：
 第二十二课：
