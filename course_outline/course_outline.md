@@ -346,6 +346,20 @@
 	
 	
 	<img>	定义图像。
+	图像透明度
+		img
+		{
+		  opacity:0.4;
+		}
+	图像轮廊
+		<div class="responsive">
+		  <div class="img">
+		    <a target="_blank" href="http://static.runoob.com/images/demo/demo1.jpg">
+		      <img src="http://static.runoob.com/images/demo/demo1.jpg" alt="图片文本描述" width="300" height="200">
+		    </a>
+		    <div class="desc">这里添加图片文本描述</div>
+		  </div>
+		</div>
 	
 	position定位
 		static:无特殊定位，对象遵循正常文档流。top bottom left right等属性不会被应用
@@ -663,6 +677,23 @@
 		document.getElementsByTagName()
 		
 		事件监听
+			绑定事件监听:
+				btn.addEventListener("click",eventTwo);
+			解除事件监听:
+				btn.removeEventListener("click",eventOne);
+		
+			var eventOne = function(){ 
+			  alert("第一个监听事件"); 
+			} 
+			function eventTwo(){ 
+			  alert("第二个监听事件"); 
+			} 
+			window.onload = function(){ 
+			  var btn = document.getElementById("yuanEvent"); 
+			  btn.addEventListener("click",eventOne); 
+			  btn.addEventListener("click",eventTwo); 
+			  btn.removeEventListener("click",eventOne); 
+			}
 	课后总结：
 第二十一课：
 	前情提要：
