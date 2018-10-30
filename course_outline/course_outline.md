@@ -180,13 +180,18 @@
 			颜色代码
 			颜色函数rgb(0-255,0-255,0-255)
 	
-	letter-spacing	设置字符间距。	1
-	line-height	设置行高。	1
-		单行文本垂直居中,line-height=height让文本高度等于行高
-	text-align	规定文本的水平对齐方式。
-	text-indent: 2em 首行缩进(两字体)
-	
-	text-decoration: line-through;none;underline;overline(综合<del>标签,讲解结构,样式,行为相分离)
+	direction	设置文本方向。
+	letter-spacing	设置字符间距
+	line-height	设置行高
+	text-align	对齐元素中的文本
+	text-decoration	向文本添加修饰
+	text-indent	缩进元素中文本的首行
+	text-shadow	设置文本阴影
+	text-transform	控制元素中的字母
+	unicode-bidi	设置或返回文本是否被重写 
+	vertical-align	设置元素的垂直对齐
+	white-space	设置元素中空白的处理方式
+	word-spacing	设置字间距
 	
 	课后总结：
 第六课：
@@ -219,6 +224,10 @@
 	<p>
 	<h1>-<h6>
 	<div>	定义文档中的节。
+	
+	隐藏效果：
+		display:none
+		或visibility:hidden
 	
 	<section> <header>  <footer>
 	
@@ -388,7 +397,7 @@
 	选择器第六季
 		之伪元素
 		:first-child	p:first-child	选择属于父元素的第一个子元素的每个 <p> 元素。	2
-		:last-child	p:last-child	选择属于其父元素最后一个子元素每个 <p> 元素。	3
+		:last-child		p:last-child	选择属于其父元素最后一个子元素每个 <p> 元素。	3
 		:nth-child(n)	p:nth-child(2)	选择属于其父元素的第二个子元素的每个 <p> 元素。	3
 	
 	float
