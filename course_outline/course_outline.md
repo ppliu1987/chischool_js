@@ -370,6 +370,8 @@
 		  </div>
 		</div>
 	
+	文档流:
+	
 	position定位
 		static:无特殊定位，对象遵循正常文档流。top bottom left right等属性不会被应用
 		raletive：对象遵循正常文档流，但将遵循top bottom left right等属性进行位置偏移
