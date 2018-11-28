@@ -55,9 +55,9 @@ header nav ul li {
     text-align:center;
 }
 #container article figure img {
-    max-width: 100%;
-    height: auto;
-    margin:0 auto
+	    max-width: 100%;
+	    height: auto;
+	    margin:0 auto
 }
 #container article section {
     margin: 20px;
