@@ -2,141 +2,36 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<!--
-        	作者：ppliu1987@126.com
-        	时间：2018-11-28
-        	描述：响应式
-        -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>欢迎来到JavaScript的世界</title>
+		
 		<style type="text/css">
 			*{
-				padding:0;
 				margin:0;
-			}
-			body{
-				background-color:#FF9;
-			}
-			header,section,article{
-				display:block;
-			}
-			header{
-				height:60px;
-				width:1080px;
-				background-color: #C0F;
-				margin:0 auto;
-				text-align:center;
-				font-size:16px
-			}
-			header p{
-				padding-top:20px;
+				padding:0;
 			}
 			.container{
-				width:1080px;
-				height:auto;
-				background-color: #F00;
-				margin:0 auto;
-			}
-			.left{
-				width:700px;
-				height:auto;
-				padding:20px;
-				float:left;
-			}
-			.right{
 				width:300px;
-				height:auto;
-				padding:20px;
-				float:left;
-			}
-			.imglist {
-			    font-size:0
-			}
-			.imglist li {
-			    display:inline-block;
-			    display:inline;
-			    zoom:1;
-			    width:66px;
-			    height:40px;
-			    border:1px solid #eee;
-			    overflow:hidden;
-			    margin-right:5px;
-			    margin-top:5px;
-			}
-			.imglist li img {
-			    width:45%;
-			    height:auto;
-			    margin:2px;
-			}
-			.left p img{/*图片等比例缩放*/
-				max-width: 100%;
-			    height: auto;
-			    margin:0 auto
+				height:300px;
+				background-color:red;
+			}	
+			.interval{
+				border-width:3px solid #734;
+				width:10px;
+				height:10px;
+			}			
+			.content{
+				margin:50px;
+				width:100px;
+				height:100px;
+				background-color:#77F;
 			}
 		</style>
 		
 	</head>
 	<body>
-		
-		<header><p>这是一个居中的div</p></header>
 		<div class="container">
-			<section class="left">
-				<p><img src="../../img/5912da4d65fcc.jpg"></p>
-	            <p>前端对于网站来说，通常是指，网站的前台部分包括网站的表现层和结构层。因此前端技术一般分为前端设计和前端开发，前端设计一般可以理解为网站的视觉设计，前端开发则是网站的前台代码实现，包括基本的HTML和CSS以及JavaScript/ajax，现在最新的高级版本HTML5、CSS3，以及SVG等。</p>
-	            <p>html指的是超文本标记语言 (Hyper Text Markup Language)，这个也是我们网页最常用普通的语言了，经历了多个版本的发展，已经发展到5.0版了，得力于W3C建立的标准和规范，已普遍升级到了XHTML，XHTML 指可扩展超文本标签语言（EXtensible HyperText Markup Language）， XHTML 于2000年的1月26日成为 W3C 标准，是更严格更纯净的 HTML 代码，XHTML 的目标是取代 HTML。XHTML 与 HTML 4.01 几乎是相同的，XHTML 是作为一种 XML 应用被重新定义的 HTML，是一个 W3C 标准。W3C 将 XHTML 定义为最新的HTML版本。所有新的浏览器都支持 XHTML</p>
-	            <p>css级联样式表（Cascading Style Sheet）简称“CSS”，通常又称为“风格样式表（Style Sheet）”，它是用来进行网页风格设计的。比如，如果想让链接字未点击时是蓝色的，当鼠标移上去后字变成红色的且有下划线，这就是一种风格。通过设立样式表，可以统一地控制HTML中各标志的显示属性。级联样式表可以使人更能有效地控制网页外观。使用级联样式表，可以扩充精确指定网页元素位置，外观以及创建特殊效果的能力</p>
-	            <p>javascript是一种由Netscape的LiveScript发展而来的原型化继承的面向对象的动态类型的区分大小写的客户端脚本语言，主要目的是为了解决服务器端语言，比如Perl，遗留的速度问题，为客户提供更流畅的浏览效果。当时服务端需要对数据进行验证，由于网络速度相当缓慢，只有28.8kbps，验证步骤浪费的时间太多。于是Netscape的浏览器Navigator加入了Javascript，提供了数据验证的基本功能</p>
-       		</section>
-       		<section class="right">
-	       		<article>
-		            <h1>最多访问文章</h1>
-		            <ul>
-		                <li>&middot;《全民编程》我在微软生活中所接触的 </li>
-		                <li>&middot;Eclipse安装SVN插件方式简明介绍</li>
-		                <li>&middot;使用Eclipse调试Java程序的10个技巧 </li>
-		                <li>&middot;三步学会Java Socket编程 </li>
-		                <li>&middot;程序员妻子自述: 那些程序员教给我的</li>
-		                <li>&middot;我希望在20岁时就知道的26条时间管理 </li>
-		                <li>&middot;详解Java解析XML的四种方法 </li>
-		                <li>&middot;Java数组声明、创建、初始化 </li>
-		            </ul>
-		        </article>
-		        <article>
-		            <h1>最新发布照片</h1>
-		            <ul class="imglist">
-		                <li><img src="../../img/5912da4d65fcc.jpg"></li>
-		                <li><img src="../../img/5912da4d65f27.jpg"></li>
-		                <li><img src="../../img/58f6effe4ca97.jpg"></li>
-		                <li><img src="../../img/58f6effe4cbe5.jpg"></li>
-		            </ul>
-		        </article>
-		        <article>
-		            <h1>最多访问文章</h1>
-		            <ul>
-		                <li>&middot;《全民编程》我在微软生活中所接触的 </li>
-		                <li>&middot;Eclipse安装SVN插件方式简明介绍</li>
-		                <li>&middot;使用Eclipse调试Java程序的10个技巧 </li>
-		                <li>&middot;三步学会Java Socket编程 </li>
-		                <li>&middot;程序员妻子自述: 那些程序员教给我的</li>
-		                <li>&middot;我希望在20岁时就知道的26条时间管理 </li>
-		                <li>&middot;详解Java解析XML的四种方法 </li>
-		                <li>&middot;Java数组声明、创建、初始化 </li>
-		            </ul>
-		        </article>
-		        <article>
-		            <h1>最多访问文章</h1>
-		            <ul>
-		                <li>&middot;《全民编程》我在微软生活中所接触的 </li>
-		                <li>&middot;Eclipse安装SVN插件方式简明介绍</li>
-		                <li>&middot;使用Eclipse调试Java程序的10个技巧 </li>
-		                <li>&middot;三步学会Java Socket编程 </li>
-		                <li>&middot;程序员妻子自述: 那些程序员教给我的</li>
-		                <li>&middot;我希望在20岁时就知道的26条时间管理 </li>
-		                <li>&middot;详解Java解析XML的四种方法 </li>
-		                <li>&middot;Java数组声明、创建、初始化 </li>
-		            </ul>
-		        </article>
-       		</section>
+			<div class="interval"></div>
+			<div class="content"></div>
 		</div>
 	</body>
 </html>
