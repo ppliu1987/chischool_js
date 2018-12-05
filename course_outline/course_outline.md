@@ -183,9 +183,9 @@
 			颜色代码
 			颜色函数rgb(0-255,0-255,0-255)
 	
-	direction	设置文本方向。
+	direction	设置文本方向。ltr-left to right  rtl-right to left
 	letter-spacing	设置字符间距
-	line-height	设置行高
+	line-height	设置行高--font-size+行间距=line-height行高
 	text-align	对齐元素中的文本
 	text-decoration	向文本添加修饰
 	text-indent	缩进元素中文本的首行
@@ -295,19 +295,25 @@
 	margin-bottom	设置元素的下外边距。	1
 	margin-left	设置元素的左外边距。	1
 	margin-right	设置元素的右外边距。	1
-	margin-top	设置元素的上外边距。
+	margin-top	设置元素的上外边距。(上边距的特殊性，父元素和子元素上边线重合，子元素设置margin会带动父元素的边线)
+	margin是在边界外
+	
+	margin-padding的顺序：上-右-下-左
 	
 	padding	在一个声明中设置所有内边距属性。	1
 	padding-bottom	设置元素的下内边距。	1
 	padding-left	设置元素的左内边距。	1
 	padding-right	设置元素的右内边距。	1
 	padding-top	设置元素的上内边距。
+	padding会填充扩大边界
 	
 	overflow属性
 		visible 	默认值。内容不会被修剪，会呈现在元素框之外。
 		hidden 	内容会被修剪，并且其余内容是不可见的。
 		scroll 	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
 		auto 	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+			scroll和auto的区别：取值为auto时，当内容超出对象的尺寸时才会显示滚动条，而取值为scroll时，
+							  无论内容是否超出对象的尺寸，滚动条是一直存在的。
 		inherit 	规定应该从父元素继承 overflow 属性的值。
 	
 	inherit特性介绍
